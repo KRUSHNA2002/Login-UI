@@ -21,7 +21,7 @@ const Login = () => {
         }
 
         try {
-            const response = await axios.post("https://login-back-xqxf.onrender.com//login", Formdata);
+            const response = await axios.post("http://localhost:5000/login", Formdata);
             console.log(response);
             if (response.status === 200) {
                 const { token, user } = response.data;
