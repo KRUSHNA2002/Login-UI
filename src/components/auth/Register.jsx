@@ -27,7 +27,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:5000/register", formData);
+            const response = await axios.post("https://login-back-xqxf.onrender.com//register", formData);
             console.log(response);
             alert("User added successfully");
             setFormData({
